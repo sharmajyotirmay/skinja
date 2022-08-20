@@ -1,0 +1,86 @@
+.top-employe{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background: rgb(255, 161, 161);
+}
+.level-services-product{
+    padding: 1em 9em 1em 9em;
+}
+.employe-events{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+    background: rgb(255, 232, 219);
+}
+
+.services-employe{
+    height: 80vh;
+}
+.services-types{
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-top: 2em;
+}
+.types {
+    display: flex;
+    padding-left: 2em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: rgb(122, 213, 255);
+    gap: 1em;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
+.types p{
+    font-size: 1.2rem;
+}
+
+
+.employe-launch-nav-links{
+    background: rgba(121, 121, 121, 1);
+    padding:  1em 2em 1em 2em;
+    margin: 1em;
+}
+.events-employe-productivity{
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.service-employe-1 {
+    background: rgb(122, 213, 255);
+    object-fit: contain;
+}
+.service-employe-2 {
+    background: rgb(122, 213, 255);
+    object-fit: contain;
+}
+.service-employe-3 {
+    background: rgb(122, 213, 255);
+    object-fit: contain;
+}
+.service-employe-4 {
+    background: rgb(122, 213, 255);
+    object-fit: contain;
+}
+.services-employe h1{
+    text-align: center;
+}
+
+.product-work-contact-employe{
+    background: rgb(255, 232, 219);
+}

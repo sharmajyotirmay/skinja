@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import * as React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import Hire from "./components/Hire";
+import Product from "./components/Product";
+import Employe from "./components/Employe";
+import Contact from "./components/Contact"
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <Router>
+      <Navbar />
+      <Routes>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="product" element={<Product />} />
+          <Route path="employe" element={<Employe />} />
+          <Route path="hire" element = {<Hire/>}/>
+          <Route path="contactus" element = {<Contact/>}/>
+          <Route path="*" element={<NoMatch />} />
+      </Routes>
+      </Router>
+  );
+}
+
+function About() {
+  return (
+    <div>
+      <h2>About</h2>
     </div>
   );
 }
 
-export default App;
+function Dashboard() {
+  return (
+    <div>
+      <h2>Dashboard</h2>
+    </div>
+  );
+}
+
+function NoMatch() {
+  return (
+    <div>
+      <h2>Nothing to see here!</h2>
+      <p>
+        <Link to="/">Go to the home page</Link>
+      </p>
+    </div>
+  );
+}

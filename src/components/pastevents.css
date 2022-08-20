@@ -1,0 +1,41 @@
+.past-events {
+    background: rgb(255, 184, 184);
+    width: 100vw;
+    height: 100vh;
+}
+.all-past-events {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+
+.swipe-events::-webkit-scrollbar {
+    display: none;
+  }
+
+  .swipe-events {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.swipe-events {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2em;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+
+.scroll-event.clicked {
+    transition: 1s ease-in;
+}
+
+.scroll-event {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.past-events h1{
+    text-align: center;
+    font-size: 3rem;
+}

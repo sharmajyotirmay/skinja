@@ -1,0 +1,78 @@
+.product-top-bar{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 161, 161);
+}
+
+.product-launch-nav-links{
+    background: rgba(121, 121, 121, 1);
+    padding:  1em 2em 1em 2em;
+    margin: 1em;
+}
+
+.level-services-product{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5em 0 5em;
+    align-items: center;
+    background: rgb(126, 186, 255);
+}
+
+.pricing {
+    width: 20em;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 161, 161);
+}
+
+.work-contact{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-part{
+    width: 20em;
+    margin: 2em;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-part{
+    width: 40em;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 2em;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.image-part img {
+    width: 20em;
+}
+
+.product-work-contact{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+}
+.pricing {
+    border-radius: 20px;
+}
+.about-employe-product{
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 1em 5em 7em;
+}
